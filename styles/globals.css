@@ -15,10 +15,20 @@ a {
   box-sizing: border-box;
 }
 
+/************color variables************/
+:root {
+  --color-primary: #EF262C;
+  --color-secondary: #031424;
+  --color-white: #ffffff;
+}
+
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
