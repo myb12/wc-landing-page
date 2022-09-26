@@ -1,8 +1,8 @@
 import styles from '../../styles/TopBar.module.css';
+import ButtonCategory from '../shared/buttonCategory';
 import BottomNavigation from './bottomNavigation';
 import Navigation from './navigation';
 import TopBarBody from './topBarBody';
-import TopBarCategory from './topBarCategory';
 
 const TopBar = () => {
     return (
@@ -12,9 +12,13 @@ const TopBar = () => {
                     <Navigation />
                     <TopBarBody />
                 </div>
-                <div className="d-flex align-items-center">
-                    <TopBarCategory/>
-                    <BottomNavigation />
+                <div className="row align-items-center">
+                    <div className="col-md-3">
+                        <ButtonCategory />
+                    </div>
+                    <div className="col-md-9">
+                        <BottomNavigation />
+                    </div>
                 </div>
             </div>
         </div>

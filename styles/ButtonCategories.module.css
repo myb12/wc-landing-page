@@ -1,5 +1,6 @@
 .btnCategories {
-    width: 265px;
+    width: 100%;
+    max-width: 265px;
     height: 58px;
     background-color: var(--color-primary);
     border-radius: 6px 6px 0 0;
