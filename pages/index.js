@@ -1,7 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import TopBar from '../components/topBar'
-import styles from '../styles/Home.module.css'
+
+import TopBar from '../components/topBar/topBar'
 
 export default function Home() {
   return (

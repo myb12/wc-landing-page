@@ -1,9 +1,9 @@
-import ButtonCategory from "./buttonCategory";
+import ButtonCategory from "../shared/buttonCategory";
 
 
 const TopBarCategory = () => {
     return (
-        <div>
+        <div className="me-5">
             <ButtonCategory />
         </div>
     );

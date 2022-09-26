@@ -19,6 +19,7 @@ a {
 :root {
   --color-primary: #EF262C;
   --color-secondary: #031424;
+  --color-danger: #FF4E53;
   --color-white: #ffffff;
   --color-light-white: #ffffffb0;
   --color-gray: #898989;

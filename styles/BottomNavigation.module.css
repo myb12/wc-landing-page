@@ -1,0 +1,63 @@
+.bottomNavItemWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomNavItemWrapper ul {
+    display: inline-block;
+}
+
+.bottomNavItemWrapper li {
+    display: inline-block;
+}
+
+.bottomNavItemWrapper a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 0 22px;
+    position: relative;
+}
+
+.bottomNavItemWrapper select {
+    background: transparent;
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+}
+
+.bottomNavItemWrapper select:focus-visible {
+    outline: none;
+}
+
+.bottomNavItemWrapper option {
+    color: var(--color-secondary);
+}
+
+.discountWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.discountWrapper span {
+    font-size: 11px;
+    color: var(--color-light-white);
+}
+
+.discountWrapper h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-danger);
+}
+
+.discountWrapper:last-child {
+    color: var(--color-white);
+    margin-left: 10px;
+}
+
+.discountIcon {
+    color: var(--color-danger);
+    font-size: 28px;
+    margin-right: 14px;
+}

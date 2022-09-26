@@ -1,5 +1,5 @@
-import styles from '../styles/TopBarBody.module.css';
-import Logo from '../public/images/logo.png';
+import styles from '../../styles/TopBarBody.module.css';
+import Logo from '../../public/images/logo.png';
 import Image from 'next/future/image';
 import { FiSearch } from 'react-icons/fi';
 import { FaRegUser, FaRegHeart } from 'react-icons/fa';
