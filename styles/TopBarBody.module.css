@@ -36,6 +36,7 @@
     left: 16px;
     top: calc(50% - 11px);
     font-size: 22px;
+    z-index: 5;
 }
 
 .accountWrapper {

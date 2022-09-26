@@ -1,13 +1,15 @@
 import { BiMenu } from 'react-icons/bi';
-import { MdOutlineArrowDropDown } from 'react-icons/md';
+import { MdOutlineArrowDropDown, MdOutlineArrowDropUp } from 'react-icons/md';
 import styles from '../../styles/ButtonCategories.module.css';
 
-const ButtonCategory = () => {
+const ButtonCategory = ({ categoryMenuVisible }) => {
     return (
         <button className={styles.btnCategories}>
             <BiMenu />
             Top Categories
-            <MdOutlineArrowDropDown />
+            {
+                categoryMenuVisible ? <MdOutlineArrowDropDown /> : <MdOutlineArrowDropUp />
+            }
         </button>
     );
 };

@@ -1,13 +1,16 @@
 import styles from '../../styles/MainSection.module.css';
 import CategoryMenu from '../shared/categoryMenu';
 
-const MainSection = () => {
+const MainSection = ({ categoryMenuVisible }) => {
     return (
         <div className={styles.mainSection}>
             <div className="container">
                 <div className="row">
                     <div className="col-md-3">
-                        <CategoryMenu />
+                        {
+                            categoryMenuVisible && <CategoryMenu />
+                        }
+
                     </div>
                     <div className="col-md-9">
                         HEllo
