@@ -1,0 +1,45 @@
+.navItemWrapperLeft,
+.navItemWrapperRight {
+    display: inline-block;
+}
+
+.navItemWrapperLeft li,
+.navItemWrapperRight li {
+    display: inline-block;
+}
+
+.navItemWrapperLeft a,
+.navItemWrapperRight a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 0 22px;
+    position: relative;
+}
+
+.navItemWrapperLeft a::after {
+    content: '';
+    width: 1px;
+    height: 70%;
+    background-color: var(--color-white);
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+}
+
+.lastItem::after {
+    display: none !important;
+}
+
+.navItem select {
+    background: transparent;
+    color: var(--color-white);
+    border: none;
+}
+
+.navItem select:focus-visible {
+    outline: none;
+}
+
+.navItem option {
+    color: var(--color-secondary);
+}

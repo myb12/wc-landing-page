@@ -1,0 +1,88 @@
+.topBarBody {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchInputWrapper {
+    position: relative;
+    margin: 0 65px;
+}
+
+.searchInputWrapper input {
+    height: 60px;
+    border-radius: 6px;
+}
+
+.btnSearch {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 0 6px 6px 0 !important;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: none;
+}
+
+.btnSearch:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+}
+
+.searchIcon {
+    color: var(--color-gray);
+    position: absolute;
+    left: 16px;
+    top: calc(50% - 11px);
+    font-size: 22px;
+}
+
+.accountWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.accountWrapper>svg,
+.account {
+    margin-right: 48px;
+}
+
+.account svg,
+.account h4 {
+    color: var(--color-white);
+}
+
+.account svg {
+    margin-right: 20px;
+}
+
+.account h5 {
+    color: var(--color-light-white);
+}
+
+.iconWhite {
+    font-size: 22px;
+    color: var(--color-white);
+}
+
+.pill {
+    background-color: var(--color-primary);
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    position: absolute;
+    right: -8px;
+    top: -4px;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
