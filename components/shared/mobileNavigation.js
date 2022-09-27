@@ -51,6 +51,9 @@ const MobileNavigation = () => {
                         <option value="BDT">BDT</option>
                     </select>
                 </a>
+                <a href="#">More..</a>
+
+
             </div>
         </div>
     );
