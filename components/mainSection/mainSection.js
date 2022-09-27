@@ -1,6 +1,7 @@
 import styles from '../../styles/MainSection.module.css';
 import CategoryMenu from '../shared/categoryMenu';
 import CustomSlider from '../customlider/customSlider';
+import PopularProduct from '../popularProduct/popularProduct';
 
 const MainSection = ({ categoryMenuVisible }) => {
     return (
@@ -17,6 +18,8 @@ const MainSection = ({ categoryMenuVisible }) => {
                         <CustomSlider />
                     </div>
                 </div>
+
+                <PopularProduct />
             </div>
         </div>
     );

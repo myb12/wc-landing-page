@@ -1,0 +1,22 @@
+.popularProductCard {
+    border-radius: 6px;
+    height: 72px;
+    padding: 23px 26px;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+}
+
+.popularProductCard img {
+    height: 36px;
+    width: 36px;
+    object-fit: cover;
+    margin-right: 22px;
+}
+
+.popularProductCard p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(---color-font);
+}
