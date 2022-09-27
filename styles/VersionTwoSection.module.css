@@ -1,0 +1,28 @@
+.smallImageBody {
+    position: absolute;
+    height: 110px;
+    top: calc(50% - 50px);
+    left: 10px;
+    color: #000;
+}
+
+.smallImageBody h5 {
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.smallImageBody h4 {
+    color: var(--color-danger);
+}
+
+.smallImageBody h4 span {
+    color: var(--color-blue);
+    text-decoration: line-through;
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+.smallImageBody small {
+    color: var(--color-gray);
+    font-size: 14px;
+}
