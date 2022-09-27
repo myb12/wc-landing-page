@@ -2,7 +2,9 @@ import styles from '../../styles/MainSection.module.css';
 import CategoryMenu from '../shared/categoryMenu';
 import CustomSlider from '../customlider/customSlider';
 import PopularProduct from '../popularProduct/popularProduct';
-import Link from 'next/link'
+import Link from 'next/link';
+import banner1 from '../../public/images/banner-1.png';
+import VersionTwoSection from '../versionTwoSection/versionTwoSection';
 
 const MainSection = ({ categoryMenuVisible, version }) => {
     return (
@@ -17,7 +19,11 @@ const MainSection = ({ categoryMenuVisible, version }) => {
                     </div>
                     <div className="col-md-9">
                         {
-                            version === 2 ? 'HELLO WORLD' : <CustomSlider />
+                            version === 2
+                                ?
+                                <VersionTwoSection />
+                                :
+                                <CustomSlider image={banner1} />
                         }
 
                     </div>
