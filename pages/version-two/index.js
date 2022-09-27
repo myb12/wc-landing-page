@@ -10,8 +10,8 @@ export default function Home() {
     }
     return (
         <>
-            <TopBar categoryMenuVisible={categoryMenuVisible} handleCategoryMenu={handleCategoryMenu} />
-            <MainSection categoryMenuVisible={categoryMenuVisible} version={2} />
+            <TopBar />
+            <MainSection version={2} />
         </>
     )
 }

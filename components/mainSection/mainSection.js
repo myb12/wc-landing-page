@@ -6,8 +6,10 @@ import Link from 'next/link';
 import banner1 from '../../public/images/banner-1.png';
 import VersionTwoSection from '../versionTwoSection/versionTwoSection';
 import MobileNavigation from '../shared/mobileNavigation';
+import { useSelector } from 'react-redux';
 
-const MainSection = ({ categoryMenuVisible, version }) => {
+const MainSection = ({ version }) => {
+    const { isVisible } = useSelector(state => state.categoryMenuVisible)
     return (
         <>
             <MobileNavigation />
@@ -16,7 +18,7 @@ const MainSection = ({ categoryMenuVisible, version }) => {
                     <div className="row">
                         <div className="d-none d-lg-block col-lg-3">
                             {
-                                categoryMenuVisible && <CategoryMenu />
+                                isVisible && <CategoryMenu />
                             }
 
                         </div>

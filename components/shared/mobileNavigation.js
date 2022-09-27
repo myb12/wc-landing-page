@@ -1,16 +1,17 @@
 import Image from 'next/future/image';
-import React, { useState } from 'react';
+import React from 'react';
 import { MdOutlineClose } from 'react-icons/md';
 import styles from '../../styles/MobileNavigation.module.css';
 import logo from '../../public/images/logo.png'
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
+import { useDispatch, useSelector } from 'react-redux';
+import { setBurgerVisibility } from '../../redux/burgerMenu/burgerMenu';
 
 const MobileNavigation = () => {
-    const [burgerItem, setBurgerItem] = useState(false);
+    const { isVisible } = useSelector(state => state.burgerMenuVisible);
+    const dispatch = useDispatch();
 
-    const handleClick = () => {
-        setBurgerItem(!burgerItem);
-    }
+
     return (
         <div className={styles.mobileHeader}>
             <Image
@@ -18,11 +19,11 @@ const MobileNavigation = () => {
                 alt="Picture of the logo"
                 width={100}
             />
-            <HiOutlineMenuAlt3 className={styles.burgerIcon} onClick={handleClick} />
+            <HiOutlineMenuAlt3 className={styles.burgerIcon} onClick={() => dispatch(setBurgerVisibility())} />
 
-            <div className={burgerItem ? `${styles.burgerMenu} ${styles.burgerMenuVisible}` : styles.burgerMenu
+            <div className={isVisible ? `${styles.burgerMenu} ${styles.burgerMenuVisible}` : styles.burgerMenu
             }>
-                <MdOutlineClose className={styles.iconClose} onClick={handleClick} />
+                <MdOutlineClose className={styles.iconClose} onClick={() => dispatch(setBurgerVisibility())} />
                 <a href="#/">
                     About Us
                 </a>
