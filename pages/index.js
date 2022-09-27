@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <TopBar categoryMenuVisible={categoryMenuVisible} handleCategoryMenu={handleCategoryMenu} />
-      <MainSection categoryMenuVisible={categoryMenuVisible}  />
+      <MainSection categoryMenuVisible={categoryMenuVisible} />
     </>
   )
 }

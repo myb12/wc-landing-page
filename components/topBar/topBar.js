@@ -6,17 +6,17 @@ import TopBarBody from './topBarBody';
 
 const TopBar = ({ handleCategoryMenu, categoryMenuVisible }) => {
     return (
-        <div className={styles.topBarWraper} onClick={handleCategoryMenu}>
+        <div className={`d-none d-lg-block ${styles.topBarWraper}`} onClick={handleCategoryMenu}>
             <div className="container d-flex flex-column justify-content-between h-100">
                 <div>
                     <Navigation />
                     <TopBarBody />
                 </div>
                 <div className="row align-items-center">
-                    <div className="col-md-3">
+                    <div className="col-lg-3">
                         <ButtonCategory categoryMenuVisible={categoryMenuVisible} />
                     </div>
-                    <div className="col-md-9">
+                    <div className="col-lg-9">
                         <BottomNavigation />
                     </div>
                 </div>

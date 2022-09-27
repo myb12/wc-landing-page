@@ -1,17 +1,17 @@
 import React from 'react';
 import styles from '../../styles/PopularProductCard.module.css';
-import profile1 from '../../public/images/profile1.png'
 import Image from 'next/future/image';
 
-const PopularProductCard = () => {
+const PopularProductCard = ({ product }) => {
+    const { title, icon } = product;
     return (
         <div className={styles.popularProductCard}>
             <div className='d-flex align-items-center'>
                 <Image
-                    src={profile1}
+                    src={icon}
                     alt="Picture of the logo"
                 />
-                <p>Electronics Appliances</p>
+                <p>{title}</p>
             </div>
         </div>
     );

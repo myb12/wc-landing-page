@@ -12,14 +12,14 @@ const VersionTwoSection = () => {
             <div className="col-md-8">
                 <CustomSlider image={banner1} version2 />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mt-3 mt-lg-0" >
                 <div className="row g-4">
                     <div className="col-12">
                         <div className='position-relative'>
                             <Image
                                 src={banner2}
                                 alt="Picture of the banner"
-                                className='rounded-1'
+                                className='rounded-1 w-100'
                             />
                             <div className={styles.smallImageBody}>
                                 <p>Maecenas non erat</p>
@@ -34,7 +34,7 @@ const VersionTwoSection = () => {
                             <Image
                                 src={banner3}
                                 alt="Picture of the banner"
-                                className='rounded-1'
+                                className='rounded-1 w-100'
                             />
                             <div className={styles.smallImageBody}>
                                 <p>Maecenas non erat</p>

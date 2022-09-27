@@ -24,6 +24,7 @@ const CustomSlider = ({ image, version2 }) => {
                             className={styles.bannerImage}
                             src={image}
                             alt="Picture of the logo"
+                           
                         />
                         {
                             version2 && <div className={styles.sliderBody}>

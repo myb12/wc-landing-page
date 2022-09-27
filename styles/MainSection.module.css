@@ -1,7 +1,7 @@
 .mainSection {
     background-color: var(--color-sky);
     padding-top: 30px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .link {

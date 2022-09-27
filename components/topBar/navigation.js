@@ -9,7 +9,7 @@ const Navigation = () => {
                     <a className='ps-0' href="#">About Us</a>
                 </li>
                 <li className={styles.navItem}>
-                    <a href="#">My Account </a>
+                    <a href="#">My Account</a>
                 </li>
                 <li className={styles.navItem}>
                     <a href="#">Featured Products</a>
