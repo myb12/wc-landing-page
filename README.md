@@ -1,4 +1,4 @@
-# Dummy Facebook app built as a task given by Tier5
+# Simple E-commerce landing page built as an assignment given by Walcart
 
 ## Live-link: https://walcart-landing-page.netlify.app/
 
