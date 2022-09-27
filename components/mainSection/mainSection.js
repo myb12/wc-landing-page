@@ -2,8 +2,9 @@ import styles from '../../styles/MainSection.module.css';
 import CategoryMenu from '../shared/categoryMenu';
 import CustomSlider from '../customlider/customSlider';
 import PopularProduct from '../popularProduct/popularProduct';
+import Link from 'next/link'
 
-const MainSection = ({ categoryMenuVisible }) => {
+const MainSection = ({ categoryMenuVisible, version }) => {
     return (
         <div className={styles.mainSection}>
             <div className="container">
@@ -15,11 +16,20 @@ const MainSection = ({ categoryMenuVisible }) => {
 
                     </div>
                     <div className="col-md-9">
-                        <CustomSlider />
+                        {
+                            version === 2 ? 'HELLO WORLD' : <CustomSlider />
+                        }
+
                     </div>
                 </div>
 
                 <PopularProduct />
+
+                <Link href={version === 2 ? '/' : "/version-two"}>
+                    <a className={styles.link}>
+                        {version === 2 ? "See version one" : 'See version two'}
+                    </a>
+                </Link>
             </div>
         </div>
     );

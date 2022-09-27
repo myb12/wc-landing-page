@@ -2,27 +2,33 @@
 .rs-dropdown-item.rs-dropdown-item-focus {
     background-color: #FFF2F2 !important;
     color: #575757 !important;
+    z-index: 100;
 }
 
 .rs-dropdown-item:hover {
     background-color: #FFF2F2 !important;
     color: #575757 !important;
+    z-index: 100;
 }
 
 .rs-dropdown-item-submenu:hover {
     background-color: #FFF2F2 !important;
     color: #575757 !important;
+    z-index: 100;
 }
 
 .rs-dropdown-item-submenu:hover>.rs-dropdown-item-toggle {
     background-color: #FFF2F2 !important;
     color: #575757 !important;
+    z-index: 100;
 }
 
 .rs-dropdown-item {
     border-bottom: 1px solid #F4F4F4;
+    z-index: 100;
 }
 
 .rs-dropdown-item-submenu {
     border-bottom: none;
+    z-index: 100;
 }
