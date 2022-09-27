@@ -1,5 +1,6 @@
 import styles from '../../styles/MainSection.module.css';
 import CategoryMenu from '../shared/categoryMenu';
+import CustomSlider from '../customlider/customSlider';
 
 const MainSection = ({ categoryMenuVisible }) => {
     return (
@@ -13,7 +14,7 @@ const MainSection = ({ categoryMenuVisible }) => {
 
                     </div>
                     <div className="col-md-9">
-                        HEllo
+                        <CustomSlider />
                     </div>
                 </div>
             </div>
