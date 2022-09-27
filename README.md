@@ -17,6 +17,7 @@
 * React Hook
 * CSS
 
+### User can toggle between the two version of the site by clicking the bottom left corner BUTTON 
 
 ## Screenshots
 
